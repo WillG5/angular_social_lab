@@ -1,0 +1,7 @@
+<div><!--PARENT SOCIAL POST--> 
+    <h1>My Thoughts</h1>    
+            <button class="thoughts">New Thought</button>
+                <ul ng-repeat="list in $ctrl.listed" ng-class="{'underline': true}">{{list.name}}<br>{{list.post}}<button class="delete" ng-click="$ctrl.delete(index)">X</button></ul>
+
+    <post></post>
+</div>
